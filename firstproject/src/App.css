@@ -9,11 +9,15 @@ html,body{
 background-color: #000;
 }
 
-#papa{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f30000;
+.cards{
+  padding: 20px;
+  text-align: center;
+  color: white;
+  gap: 20px;
+  background-color: #000;
+  /* height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
