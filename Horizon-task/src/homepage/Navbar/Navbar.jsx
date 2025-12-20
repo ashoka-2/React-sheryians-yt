@@ -1,7 +1,37 @@
 import React from 'react'
-import Navbtn from './Navbtn'
-import Navlogo from './Navlogo'
-import Navlinks from './Navlinks'
+
+
+
+const Navlogo = () => {
+  return (
+    <div className='navlogo'>
+        <h1>Horizon Courts</h1>
+    </div>
+  )
+}
+
+
+const Navlinks = () => {
+  return (
+    <div className='navlinks'>
+        <a href="#" className='link active'>About Us</a>
+        <a href="#" className='link'>Services</a>
+        <a href="#" className='link'>Coaches</a>
+        <a href="#" className='link'>Events</a>
+        <a href="#" className='link'>Contacts</a>
+    </div>
+  )
+}
+
+
+const Navbtn = () => {
+  return (
+    <div id='navbtn'>
+        <h3>Book Now</h3>
+        <i className="ri-arrow-right-up-long-line"></i>
+    </div>
+  )
+}
 
 const Navbar = () => {
   return (

@@ -1,5 +1,16 @@
 import React from 'react'
-import Herobtn from './Herobtn'
+
+
+
+const Herobtn = () => {
+  return (
+    <button className='herobtn'>
+        Start your Own Journey
+    </button>
+  )
+}
+
+
 const Herotext = () => {
   return (
     <div className='herotext'>
