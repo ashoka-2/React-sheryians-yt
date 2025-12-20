@@ -7,9 +7,12 @@
 html,body{
     width: 100%;
     height: 100%;
+    background-color: #efefef
 }
 
-
+.app{
+  padding: 0 4rem;
+}
 
 
 
@@ -18,7 +21,7 @@ html,body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .navlogo{
@@ -35,10 +38,11 @@ html,body{
   color: black;
   padding: 0.5rem 1rem;
   border-radius: 50px;
+  cursor: pointer;
 
 }
 .navlinks .active{
-  border: 1px solid black;
+  border: 1px solid rgba(138, 138, 138, 0.87);
 }
 
 #navbtn{
@@ -49,10 +53,165 @@ html,body{
   border-radius: 50px;
   gap: 10px;
   font-size: 0.8rem;
+  cursor: pointer;
 
 }
 #navbtn i{
   font-size: 1rem;
 }
+
+.hero-main{
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem 0;
+}
+
+.hero-container{
+  border-radius: 30px;
+  height: 85vh;
+  width: auto;
+  background-image: url('./assets/images/hero.png');
+  
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.herotext{
+  margin-top: 4rem;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.herotext h1{
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.932);
+  font-size: 3rem;
+  text-align: center;
+}
+.herotext p{
+  width: 70%;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.932);
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+.herobtn{
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  font-size: 1rem;
+}
+
+
+
+.herobottom{
+  padding:0 1rem;
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1rem;
+}
+
+
+.avatar-container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatars{
+  width: 130px;
+  height: 50px;
+  background-color: rgba(250, 250, 250, 0.556);
+  border-radius: 50px;
+  display: flex;
+  padding: .5rem ;
+  gap: 1px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+.avatar{
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid white;
+}
+
+.avatar:nth-child(1 ){
+  background-image: url('./assets/images/man.jpg');
+  left: 10px;
+}
+
+
+.avatar:nth-child(2){
+  left: 45px;
+  background-image: url('./assets/images/man.jpg');
+
+}
+.avatar:nth-child(3){
+  background-image: url('./assets/images/man.jpg');
+
+  left: 75px;
+}
+
+
+.bottomlinks{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.botlink{
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.916);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
