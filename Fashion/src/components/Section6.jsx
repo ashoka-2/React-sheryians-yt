@@ -1,9 +1,10 @@
 import React from 'react'
 
+import SkeletonImg from '../assets/images/skeleton.png'
 
 const Coatimg = ()=>{
     return(
-        <div className='w-[50%] bg-neutral-800 h-[70vh] rounded-lg bg-cover' style={{ backgroundImage: `url('./src/assets/images/skeleton.png')` }}></div>
+        <div className='w-[50%] bg-neutral-800 h-[70vh] rounded-lg bg-cover' style={{ backgroundImage: `url(${SkeletonImg})` }}></div>
     )
 }
 

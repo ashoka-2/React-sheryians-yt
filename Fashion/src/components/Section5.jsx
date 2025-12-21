@@ -1,9 +1,10 @@
 import React from 'react'
+import ShadowImg from '../assets/images/shadowgirl.png'
 
 
 const Coatimg = ()=>{
     return(
-        <div className='w-[50%] bg-neutral-800 h-[70vh] rounded-lg bg-cover' style={{ backgroundImage: `url('./src/assets/images/shadowgirl.png')` }}></div>
+        <div className='w-[50%] bg-neutral-800 h-[70vh] rounded-lg bg-cover' style={{ backgroundImage: `url(${ShadowImg})` }}></div>
     )
 }
 
