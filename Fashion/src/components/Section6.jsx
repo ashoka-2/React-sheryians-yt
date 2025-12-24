@@ -14,7 +14,7 @@ return(
 )
 }
 
-const Advatage = ({heading,para}) =>{
+const Advatage = ({heading,para}) =>{               
     return(
         <div className='h-[50%] bg-neutral-800 rounded-xl p-10 flex flex-col gap-5 '>
             <h1>{heading}</h1>
