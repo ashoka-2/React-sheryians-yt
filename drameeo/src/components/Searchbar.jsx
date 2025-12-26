@@ -29,7 +29,7 @@ const Searchbar = () => {
   return (
    <div className='flex items-center justify-between gap-2'>
 
-     <div className=' w-130 p-4 bg-[#211A2A] border border-violet-300/20 rounded-2xl flex flex-col'>
+     <div className=' w-130 p-4 bg-[#211a2a8f] border border-violet-300/20 rounded-2xl flex flex-col'>
       
       <div className='flex items-center gap-2'>
         <i className="ri-search-2-line"></i>

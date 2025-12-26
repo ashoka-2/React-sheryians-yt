@@ -21,7 +21,7 @@ const Navlinks = (props)=>{
 
 const Navbar = () => {
   return (
-    <div className='fixed top-5 bottom-5 w-60 p-4 bg-[#211A2A] border border-violet-300/20 rounded-2xl flex flex-col'>
+    <div className='fixed top-5 bottom-5 w-60 p-4 bg-[#211a2a8f] border border-violet-300/20 rounded-2xl flex flex-col'>
       <div className='flex items-center justify-between  mb-5'>
         <div className='flex items-center gap-1 '>
           <div ><i className="ri-youtube-fill text-3xl p-1 rounded-lg" style={{backgroundColor:violetColor}}></i></div>
