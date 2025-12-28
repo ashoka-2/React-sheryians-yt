@@ -1,14 +1,23 @@
 import React from 'react'
-import movies from './Movies'
 
-const Moviecard2 = () => {
+const Moviecard2 = ({ movies = [],deleteMovie  }) => {
+
+
+
+
+  
   return (
     <div className="flex flex-wrap gap-6 ">
       {movies.map(movie => (
         <div
           key={movie.id}
-          className=" w-45 rounded-xl overflow-hidden bg-zinc-900 hover:scale-[1.02] transition-transform cursor-pointer"
+          className="relative w-45 rounded-xl overflow-hidden bg-zinc-900 hover:scale-[1.02] transition-transform cursor-pointer"
         >
+
+          <div onClick={()=>{
+            deleteMovie(movie.id)
+          }} className='hover:text-white hover:bg-red-600 absolute right-1 top-1 text-red-500 bg-white rounded-full h-6 w-6 flex items-center justify-center'><i className="ri-delete-bin-line"></i></div>
+
           <div className="w-full h-65 overflow-hidden">
             <img
               src={movie.poster}
