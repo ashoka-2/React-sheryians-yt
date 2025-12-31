@@ -1,35 +1,25 @@
 
 import React, { useState } from 'react'
 
-const AddMovie = ({ setAllMovies }) => {
+const AddMovie = ({ submitMovie }) => {
 
   const [showForm, setShowForm] = useState(false)
 
-  const [name, setName] = useState('')
-  const [image, setImage] = useState('')
+  const [title, setName] = useState('')
+  const [poster, setImage] = useState('')
   const [year, setYear] = useState('')
   const [duration, setDuration] = useState('')
   const [rating, setRating] = useState('')
 
-  const submitMovie = (e) => {
+  const handleSubmitMovie = (e) => {
     e.preventDefault()
-
-    const newMovie = {
-      id: Date.now(),
-      title: name,
-      year: Number(year),
+   submitMovie({
+      title,
+      poster,
+      year,
       duration,
-      rating: Number(rating),
-      poster: image,
-      backdrop: image,
-      genres: [],
-      description: '',
-      recentlyWatched: false,
-      watchProgress: 0
-    }
-    setAllMovies(prev => [...prev, newMovie])
-
-    
+      rating
+    })
     setName('')
     setImage('')
     setYear('')
@@ -40,7 +30,6 @@ const AddMovie = ({ setAllMovies }) => {
 
   return (
     <>
-      {/* Floating Button */}
       <button
         onClick={() => setShowForm(!showForm)}
         style={{
@@ -57,13 +46,12 @@ const AddMovie = ({ setAllMovies }) => {
         <i className="ri-add-large-fill"></i>
       </button>
 
-      {/* Form */}
       {showForm && (
         <div className='fixed bottom-20 right-20 z-10 bg-black w-96 text-white p-10 rounded-xl'>
-          <form onSubmit={submitMovie} className='flex flex-col gap-4'>
+          <form onSubmit={handleSubmitMovie} className='flex flex-col gap-4'>
 
             <input
-              value={name}
+              value={title}
               onChange={(e) => setName(e.target.value)}
               className='border p-2 rounded-xl'
               type="text"
@@ -72,7 +60,7 @@ const AddMovie = ({ setAllMovies }) => {
             />
 
             <input
-              value={image}
+              value={poster}
               onChange={(e) => setImage(e.target.value)}
               className='border p-2 rounded-xl'
               type="text"

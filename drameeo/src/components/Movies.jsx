@@ -398,34 +398,34 @@
   recentlyWatched: false,
   watchProgress: 0
 },
-// {
-//   id: 29,
-//   title: "Mission: Impossible – Fallout",
-//   year: 2018,
-//   genres: ["Action", "Thriller"],
-//   duration: "2h 27m",
-//   rating: 7.7,
-//   poster: "https://image.tmdb.org/t/p/w500/80PWnSTkygi3QWWmJ3hrAwqvLnO.jpg",
-//   backdrop: "https://image.tmdb.org/t/p/original/aw4FOsWr2FY373nKSxbpNi3fz4F.jpg",
-//   description:
-//     "Ethan Hunt races against time after a mission goes wrong.",
-//   recentlyWatched: true,
-//   watchProgress: 45
-// },
-// {
-//   id: 30,
-//   title: "Jurassic World",
-//   year: 2015,
-//   genres: ["Action", "Adventure", "Sci-Fi"],
-//   duration: "2h 4m",
-//   rating: 6.9,
-//   poster: "https://image.tmdb.org/t/p/w500/rhr4y79GpxQF9IsfJItRXVaoGs4.jpg",
-//   backdrop: "https://image.tmdb.org/t/p/original/tZjVVIYXACV4IIIhXeIM59ytqwS.jpg",
-//   description:
-//     "A new theme park on Isla Nublar descends into chaos.",
-//   recentlyWatched: false,
-//   watchProgress: 0
-// }
+{
+  id: 29,
+  title: "Mission: Impossible – Fallout",
+  year: 2018,
+  genres: ["Action", "Thriller"],
+  duration: "2h 27m",
+  rating: 7.7,
+  poster: "https://image.tmdb.org/t/p/w500/80PWnSTkygi3QWWmJ3hrAwqvLnO.jpg",
+  backdrop: "https://image.tmdb.org/t/p/original/aw4FOsWr2FY373nKSxbpNi3fz4F.jpg",
+  description:
+    "Ethan Hunt races against time after a mission goes wrong.",
+  recentlyWatched: true,
+  watchProgress: 45
+},
+{
+  id: 30,
+  title: "Jurassic World",
+  year: 2015,
+  genres: ["Action", "Adventure", "Sci-Fi"],
+  duration: "2h 4m",
+  rating: 6.9,
+  poster: "https://image.tmdb.org/t/p/w500/rhr4y79GpxQF9IsfJItRXVaoGs4.jpg",
+  backdrop: "https://image.tmdb.org/t/p/original/tZjVVIYXACV4IIIhXeIM59ytqwS.jpg",
+  description:
+    "A new theme park on Isla Nublar descends into chaos.",
+  recentlyWatched: false,
+  watchProgress: 0
+}
 
 ];
  

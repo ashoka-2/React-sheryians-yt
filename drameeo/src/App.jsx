@@ -1,22 +1,42 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Navbar from "./components/Navbar"
 import Herobody from './components/Herobody'
 import AddMovie from './components/AddMovie'
-import movies from './components/Movies'
 
 const App = () => {
 
-  const [allMovies, setAllMovies] = useState(movies)
-  const deleteMovie = (id) => {
-  setAllMovies(prev => prev.filter(movie => movie.id !== id))
-}
+  const localData = JSON.parse(localStorage.getItem('all-movies')) || []
+  const [allMovies, setAllMovies] = useState(localData)
 
+
+
+
+  const submitMovie = (movie) => {
+    const oldMovies = [...allMovies]
+    oldMovies.push(movie)
+
+    setAllMovies(oldMovies)
+    localStorage.setItem('all-movies', JSON.stringify(oldMovies))
+  }
+
+
+
+
+  const deleteMovie = (idx) => {
+    const copyMovies = [...allMovies]
+    copyMovies.splice(idx, 1)
+
+    setAllMovies(copyMovies)
+    localStorage.setItem('all-movies', JSON.stringify(copyMovies))
+  }
+
+  
 
   return (
-    <div className='flex h-full w-full p-5 bg-[radial-gradient(125%_125%_at_50%_10%,#06020a_40%,#180133_100%)]'>
+    <div className='flex h-full w-full p-5 bg-black'>
       <Navbar/>
-      <Herobody movies={allMovies} deleteMovie={deleteMovie} />
-      <AddMovie setAllMovies={setAllMovies} />
+      <Herobody movies={allMovies} deleteMovie={deleteMovie}/>
+      <AddMovie submitMovie={submitMovie}/>
     </div>
   )
 }

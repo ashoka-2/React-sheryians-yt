@@ -8,9 +8,9 @@ const Moviecard2 = ({ movies = [],deleteMovie  }) => {
   
   return (
     <div className="flex flex-wrap gap-6 ">
-      {movies.map(movie => (
+      {movies.map((movie,idx) => (
         <div
-          key={movie.id}
+          key={idx}
           className="relative w-45 rounded-xl overflow-hidden bg-zinc-900 hover:scale-[1.02] transition-transform cursor-pointer"
         >
 
