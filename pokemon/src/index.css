@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+html,body {
+    width: 100%;
+  font-family: "Lato", sans-serif;
+  background: #16141b;
+  background: linear-gradient(to top, #2c2b2e, #16141b);
+ 
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to top, #2c2b2e, #16141b);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #fb4002, #00000000);
+  border-radius: 20px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  linear-gradient(to top, #028ffb, #00000000);
+}
+
+
+
+
+h4,
+h5 {
+  margin: 0;
+  display: inline;
+}
+
+
+
+
+.poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pokemon {
+  background-color: rgb(54, 54, 54);
+  background: linear-gradient(to bottom, rgb(43, 42, 42), rgb(27, 27, 27));
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  margin: 0.8rem;
+  padding: 2rem;
+  text-align: center;
+  color: #f1f1f1;
+  position: relative;
+}
+
+.pokemon:hover {
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+.pokemon .img-container {
+  background: linear-gradient(to bottom,
+      rgba(214, 214, 214, 0.325),
+      rgba(77, 77, 77, 0.1));
+  box-shadow: 0 0 10px 10px rgba(202, 201, 201, 0.05);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+.pokemon .img-container img {
+  margin-top: 1rem;
+  width: 85%;
+  height: 85%;
+  filter: saturate(120%) brightness(110%);
+}
+
+.pokemon .info {
+  margin-top: 1.1rem;
+}
+
+
+
+.name {
+  margin: 1rem 0 0.3rem;
+  text-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.9);
+  transition: font-size 0.1s ease-out;
+}
+
+.basic-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  gap: 5px;
+}
+
+small {
+  opacity: 0.5;
+  margin-right: 2px
+}
+
+.weight,
+.height {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.6rem;
+  display: block;
+  margin: 0.25rem;
+}
+
+.type-data {
+  margin-top: 1rem;
+}
+
+
+
