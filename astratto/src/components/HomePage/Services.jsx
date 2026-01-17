@@ -1,11 +1,11 @@
 import React from "react";
-import left from "../assets/Images/left.jpg";
-import middle from "../assets/Images/middle.jpg";
-import right from "../assets/Images/right.jpg";
-import arrow from "../assets/Images/arrow.png"
-import logo from "../assets/Images/logo.png"
-import star from "../assets/Images/star.png"
-import line from "../assets/Images/line.png"
+import left from "../../assets/Images/left.jpg";
+import middle from "../../assets/Images/middle.jpg";
+import right from "../../assets/Images/right.jpg";
+import arrow from "../../assets/Images/arrow.png"
+import logo from "../../assets/Images/logo.png"
+import star from "../../assets/Images/star.png"
+import line from "../../assets/Images/line.png"
 
 
 const Services = () => {
@@ -27,7 +27,7 @@ const Services = () => {
               Graphic
             </h5>
             <div className="py-2 px-3 text-white text-xl rounded-full bg-purple-700">
-              <i class="ri-arrow-right-up-long-line"></i>
+              <i className="ri-arrow-right-up-long-line"></i>
             </div>
           </div>
 
@@ -123,14 +123,14 @@ const Services = () => {
           </div>
         </div> */}
 
-        <div className="border-2 border-purple-300 p-4 rounded-xl grow basis-1 flex flex-col justify-between">
+        <div className="border-2 border-purple-300 p-4 rounded-xl grow basis-1 flex flex-col justify-between ">
           <div className="pb-2 flex justify-between items-center">
             <h5 className="text-xl md:text-2xl font-sans font-semibold">
               Visual <br />
               Identity
             </h5>
             <div className="py-2 px-3 text-white text-xl rounded-full bg-purple-700">
-              <i class="ri-arrow-right-up-long-line"></i>
+              <i className="ri-arrow-right-up-long-line"></i>
             </div>
           </div>
 
@@ -151,21 +151,21 @@ const Services = () => {
       <div className="hidden md:flex justify-between items-center">
         <div className="flex gap-2">
           <div className="text-gray-400">
-            <i class="ri-arrow-left-long-line"></i>
+            <i className="ri-arrow-left-long-line"></i>
           </div>
-          <i class="ri-arrow-right-long-fill"></i>
+          <i className="ri-arrow-right-long-fill"></i>
         </div>
         <div className="flex items-center">
           <div className="text-3xl">
-            <i class="ri-subtract-line"></i>
+            <i className="ri-subtract-line"></i>
           </div>
           <div className="text-gray-400">
-            <i class="ri-subtract-line"></i>
-            <i class="ri-subtract-line"></i>
-            <i class="ri-subtract-line"></i>
-            <i class="ri-subtract-line"></i>
-            <i class="ri-subtract-line"></i>
-            <i class="ri-subtract-line"></i>
+            <i className="ri-subtract-line"></i>
+            <i className="ri-subtract-line"></i>
+            <i className="ri-subtract-line"></i>
+            <i className="ri-subtract-line"></i>
+            <i className="ri-subtract-line"></i>
+            <i className="ri-subtract-line"></i>
           </div>
         </div>
       </div>
@@ -173,7 +173,7 @@ const Services = () => {
       <div className="py-6 md:py-8 relative">
         <div className="flex justify-center text-gray-400 text-[.75rem] md:text-sm mb-2">
           <div>
-            <i class="ri-subtract-line"></i>
+            <i className="ri-subtract-line"></i>
           </div>
           <span className="uppercase">About Astratto</span>
         </div>
@@ -182,7 +182,7 @@ const Services = () => {
           <h2><span><img src={arrow} className="h-10 md:h-15 xl:h-18 inline"/></span>Our <span className="text-gray-400">visionary</span> <span className="text-red-500">artisans</span> collaborate <br /><span className="text-purple-700">seamlessly</span> to craft <span><img src={logo} className="h-6 md:h-10 xl:h-15 inline"/></span> inspiring <span className="text-gray-400">experiences,</span> <br /><span className="text-red-500">leaving</span> lasting <span className="text-gray-400">imprints</span> on <span className="text-purple-700">brands</span> <br />and spaces. <span><img src={star} className="h-10 md:h-15 xl:h-18 inline"/></span></h2>
         </div>
 
-        <div className="absolute bottom-0 md:translate-y-10 left-8 md:left-40 xl:left-70 lg:translate-y-10 xl:translate-y-20"><img src={line} className="h-15 md:h-40 xl:h-60 rotate-10"/></div>
+        <div className="absolute bottom-0 md:translate-y-10 left-50 md:left-40 xl:left-70 lg:translate-y-10 xl:translate-y-20"><img src={line} className="h-15 md:h-40 xl:h-60 rotate-10"/></div>
 
       </div>
     </div>

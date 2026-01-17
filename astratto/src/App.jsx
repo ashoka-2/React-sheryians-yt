@@ -1,9 +1,9 @@
 import React from "react";
-import Footer from "./components/Footer";
-import Projects from "./components/Projects";
-import Services from "./components/Services";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
+import Footer from "./components/NavFoot/Footer";
+import Projects from "./components/HomePage/Projects";
+import Services from "./components/HomePage/Services";
+import Hero from "./components/HomePage/Hero";
+import Navbar from "./components/NavFoot/Navbar";
 
 
 

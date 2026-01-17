@@ -1,9 +1,9 @@
 import React from "react";
 
-import first from "../assets/Images/first.jpg";
-import second from "../assets/Images/second.jpg";
-import third from "../assets/Images/third.jpg";
-import fourth from "../assets/Images/fourth.jpg";
+import first from "../../assets/Images/first.jpg";
+import second from "../../assets/Images/second.jpg";
+import third from "../../assets/Images/third.jpg";
+import fourth from "../../assets/Images/fourth.jpg";
 
 const Projects = () => {
   return (
@@ -26,7 +26,7 @@ const Projects = () => {
                 className="h-60 w-full object-cover rounded-xl"
               />
               <div className="absolute right-4 top-4 text-xl px-3 py-2 bg-white rounded-full">
-                <i class="ri-arrow-right-up-long-line"></i>
+                <i className="ri-arrow-right-up-long-line"></i>
               </div>
               <div className="px-4 py-1 bg-white rounded-2xl absolute bottom-4 left-4">
                 2D Animation
@@ -46,7 +46,7 @@ const Projects = () => {
                 className="h-60 w-full object-cover rounded-xl"
               />
               <div className="absolute right-4 top-4 text-xl px-3 py-2 bg-white rounded-full">
-                <i class="ri-arrow-right-up-long-line"></i>
+                <i className="ri-arrow-right-up-long-line"></i>
               </div>
               <div className="px-4 py-1 bg-white rounded-2xl absolute bottom-4 left-4">
                 Motion Graphics
@@ -70,7 +70,7 @@ const Projects = () => {
                 className="h-60 w-full object-cover rounded-xl"
               />
               <div className="absolute right-4 top-4 text-xl px-3 py-2 bg-white rounded-full">
-                <i class="ri-arrow-right-up-long-line"></i>
+                <i className="ri-arrow-right-up-long-line"></i>
               </div>
               <div className="px-4 py-1 bg-white rounded-2xl absolute bottom-4 left-4">
                 Visual Identity
@@ -90,7 +90,7 @@ const Projects = () => {
                 className="h-60 w-full object-cover rounded-xl"
               />
               <div className="absolute right-4 top-4 text-xl px-3 py-2 bg-white rounded-full">
-                <i class="ri-arrow-right-up-long-line"></i>
+                <i className="ri-arrow-right-up-long-line"></i>
               </div>
               <div className="px-4 py-1 bg-white rounded-2xl absolute bottom-4 left-4">
                 3D Animation
