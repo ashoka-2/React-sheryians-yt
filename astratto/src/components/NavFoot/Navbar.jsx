@@ -21,7 +21,7 @@ const LeftLinks = () => {
 const Logo = () => {
   return (
     <a href="#" className='mx-auto flex justify-center items-center font-semibold hover:text-purple-700 duration-300'>
-      <img src={logo} alt="" className='mr-1 h-6 object-contain object-center md:mr-2 md:h-10'/>
+      <img src={logo} alt="" className=' mr-1 h-6 object-contain object-center md:mr-2 md:h-10'/>
       <span className='text-[clamp(1rem,2vw,1.8rem)]'>Astratto</span>
     </a>
   )
@@ -32,7 +32,7 @@ const RightLinks = () => {
     <div>
       <ul className='flex gap-4 items-center'>
         <li className='hover:text-purple-700 transition-all hidden md:block text-xs md:text-lg'><a href="#">Career</a></li>
-        <li className='px-3 py-1 border-2 border-yellow-400 rounded-3xl cursor-pointer text-xs md:text-lg whitespace-nowrap hover:border-purple-500 transition-all duration-200'><a href="#">Contact Us <i className="text-violet-700 ri-arrow-right-up-long-line"></i></a></li>
+        <li className='group pl-3 pr-0.5 py-1 border-2 border-yellow-400 rounded-3xl cursor-pointer text-xs md:text-lg whitespace-nowrap hover:border-purple-500 transition-all duration-200'><a href="#">Contact Us <i className="text-violet-700 group-hover:bg-violet-600 group-hover:text-white p-2 rounded-full transition-all ease-linear  ri-arrow-right-up-long-line"></i></a></li>
       </ul>
     </div>
   )
@@ -42,7 +42,7 @@ const RightLinks = () => {
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center mx-2 pb-4 text-[clamp(0.875rem,1.5vw,1.25rem)] border-b-2 border-gray-300">
+    <nav data-aos="fade-down" className="flex items-center mx-2 pb-4 text-[clamp(0.875rem,1.5vw,1.25rem)] border-b-2 border-gray-300">
       <LeftLinks />
       <Logo />
       <RightLinks />

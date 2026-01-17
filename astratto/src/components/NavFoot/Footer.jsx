@@ -4,14 +4,24 @@ import logo from "../../assets/Images/logo-text.png";
 
 const Footer = () => {
   return (
-    <div className='py-2 px-6 border border-gray-300 rounded-4xl'>
-      <div className='text-center py-4 w-fit mx-auto relative'>
+    <div data-aos="fade-up" className='py-2 px-6 border border-gray-300 rounded-4xl'>
+      <div  className='text-center py-4 w-fit mx-auto relative'>
         <p className='text-[.7rem] md:text-sm text-purple-700'>Open the door to lorging your brand's story</p>
         <h2 className='text-sm md:text-2xl lg:text-3xl xl:text-5xl py-2 md:py-4'>Embark on a Transformative Journey <br />Shaping <span className='px-2 py-1 rounded-xl text-white bg-yellow-400 rotate-1 inline-block'>Your Brand's Destiny</span> Through Our <br />Dedicated Partnership</h2>
         <span className='text-[0.5rem] md:text-xs leading-tight block text-gray-400 pt-2'>Join us on a transformative journey to shope your brand's destiny through our <br />dedicated partnership, crafting a natalie that resonates</span>
 
-        <div className='absolute top-4 left-0'><img src={star} className='h-8 md:h-15'/></div>
-        <div className='absolute right-8 bottom-11 md:bottom-12 md:right-15 lg:bottom-10 lg:right-15'><img src={logo} className='h-10 md:h-15 lg:h-20'/></div>
+        <div style={{
+          animation: "softBounce 2.6s ease-in-out infinite",
+          animationDelay: "0.6s",
+        }} className='absolute top-4 left-0'><img src={star} className='h-8 md:h-15'/></div>
+        <div className='absolute right-8 bottom-11 md:bottom-12 md:right-15 lg:bottom-10 lg:right-15'><img src={logo} 
+        
+        style={{
+
+        animation: "softBounce 2.6s ease-in-out infinite",
+    animationDelay: "0.6s",
+
+      }} className='h-10 md:h-15 lg:h-20'/></div>
       </div>
 
       <hr className='text-gray-400'/>

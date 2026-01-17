@@ -1,20 +1,26 @@
 import React from "react";
-import Footer from "./components/NavFoot/Footer";
-import Projects from "./components/HomePage/Projects";
-import Services from "./components/HomePage/Services";
-import Hero from "./components/HomePage/Hero";
-import Navbar from "./components/NavFoot/Navbar";
+import Homepage from "./components/HomePage/Homepage";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
 
 
 
 const App = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
+
   return (
-    <div className="font-['Poppins'] p-4 max-w-300 mx-auto ">
-      <Navbar />
-      <Hero />
-      <Services />
-      <Projects />
-      <Footer />
+    <div >
+      <Homepage/>
+      
     </div>
   );
 };
